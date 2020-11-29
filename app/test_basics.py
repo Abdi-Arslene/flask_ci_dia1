@@ -15,7 +15,7 @@ class CounterTest(unittest.TestCase):
 		self.assertEqual(response.status_code, 200)
 	#Test for the visit page
 	def test_redis_connexion(self):
-		redis=Redis(host="redis-server"n db=0)
+		redis=Redis(host="redis-server", db=0)
 		self.app.get('/visit')
 		self.app.get('/visit')
 		self.app.get('/visit')
